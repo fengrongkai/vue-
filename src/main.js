@@ -1,5 +1,6 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App  from './App.vue'
+const firstApp = App
 // import router from './route'
 // import store from './vuex'
 
@@ -12,5 +13,5 @@ new Vue({
         return {}
 
     },
-  render: h => h(App),
-}).$mount('#app')
+  render: h => h(firstApp),   // 这里h就是createElement方法
+}).$mount('#html-app')
